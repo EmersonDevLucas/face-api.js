@@ -33,6 +33,10 @@ app.get('/bbt_face_matching', (req, res) => res.sendFile(path.join(viewsDir, 'bb
 app.get('/bbt_face_recognition', (req, res) => res.sendFile(path.join(viewsDir, 'bbtFaceRecognition.html')))
 app.get('/batch_face_landmarks', (req, res) => res.sendFile(path.join(viewsDir, 'batchFaceLandmarks.html')))
 app.get('/batch_face_recognition', (req, res) => res.sendFile(path.join(viewsDir, 'batchFaceRecognition.html')))
+app.get('/home', (req, res) => res.sendFile(path.join(viewsDir, 'home.html')))
+app.get('/face', (req, res) => res.sendFile(path.join(viewsDir, 'face.html')))
+
+
 
 app.post('/fetch_external_image', async (req, res) => {
   const { imageUrl } = req.body
