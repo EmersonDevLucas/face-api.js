@@ -35,6 +35,8 @@ app.get('/batch_face_landmarks', (req, res) => res.sendFile(path.join(viewsDir, 
 app.get('/batch_face_recognition', (req, res) => res.sendFile(path.join(viewsDir, 'batchFaceRecognition.html')))
 app.get('/home', (req, res) => res.sendFile(path.join(viewsDir, 'home.html')))
 app.get('/face', (req, res) => res.sendFile(path.join(viewsDir, 'face.html')))
+app.get('/word', (req, res) => res.sendFile(path.join(viewsDir, 'word.html')))
+
 
 
 
